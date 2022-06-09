@@ -29,7 +29,10 @@
                                 <!-- <th>S.N</th> -->
                                 <th>Title</th>
                                 <th>Body</th>
-                                <th>Action</th>
+                                @can('isAdmin')
+                                    
+                                
+                                <th>Action</th>@endcan
                             </tr>
                         </thead>
                         <tbody>
@@ -40,6 +43,7 @@
                                 <!-- <td>{{$data ->id}}</td> -->
                                 <td>{{$data->title}}</td>
                                 <td>{{$data->description}}</td>
+                                @can('isAdmin')
                                 <td>
 
                                     <a href="{{route('post_edit',$data->id)}}" class="m-1"><i class="bi bi-pencil text-primary"></i></a>
@@ -52,7 +56,7 @@
                                     </form>
 
 
-                                </td>
+                                </td>@endcan
 
                             </tr>
                             @endforeach
