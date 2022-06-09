@@ -20,6 +20,7 @@
 
 
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
+                <h1 class="text-center bg-dark text-light fs-3">Edit Your Post</h1>
                 <div class="p-6 bg-white border-b border-gray-200">
 
                     <form action="{{route('post_update',$data['id'])}}" method="POST">

@@ -20,10 +20,12 @@
 
 
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
+            <h1 class="bg-dark text-light fs-3">Create Post</h1>
+
                 <div class="p-6 bg-white border-b border-gray-200">
 
                     <form action="{{route('post_store')}}" method="POST">
-
+                     
                         @csrf
                         <div class="mb-3">
                             <label for="post_title" class="form-label">Title</label>
@@ -35,7 +37,7 @@
 
                         </div>
 
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="submit" class="btn btn-primary">Save</button>
                     </form>
                 </div>
             </div>
