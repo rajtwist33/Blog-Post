@@ -18,8 +18,8 @@
 
 </head>
 
-<body class="">
-    <div class="row justify-content-lg-between bg-dark">
+<body >
+    <div class="row justify-content-lg-between bg-dark fixed-top mb-5">
         <div class="col-md-2">
             <h1 class="text-white m-2 p-1"> Mini Post</h1>
         </div>
@@ -46,9 +46,9 @@
     </div>
 
 
-    <div class="row justify-content-center mt-3">
+    <div class="row justify-content-center mt-5">
         @foreach ($key as $data )
-         <div class="col-md-8">
+         <div class="col-md-8 mt-5">
             <h1 class="fs-3"> {{$data->title}}</h1>
             <p> {{$data->description}}</p>
 
