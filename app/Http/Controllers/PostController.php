@@ -39,7 +39,7 @@ class PostController extends Controller
         $data->title = $request->title;
         $data->description = $request->description;
          $data->save();
-        return redirect()->back()->with('success','Blog Data Saved.');
+        return redirect()->back()->with('success','Blog  Posted.');
        
     }
 
@@ -88,7 +88,7 @@ class PostController extends Controller
         // $data->title = $request->title;
         // $data->description = $request->description;
         //  $data->save();
-        return redirect()->back()->with('success','Blog Data Updated.');
+        return redirect()->back()->with('success','Blog  Updated.');
     }
 
     /**
@@ -100,6 +100,6 @@ class PostController extends Controller
     public function destroy($id)
     {
        Post::destroy($id);
-       return back()->with('success','Blog Item Deleted .');
+       return back()->with('success','Blog  Deleted .');
     }
 }
